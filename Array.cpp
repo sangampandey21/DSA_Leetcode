@@ -3,9 +3,9 @@ public:
     vector<long long> resultArray(vector<int>& nums, int k) {
         int n = nums.size();
         vector<long long> result(k);
-        vector<long long> dp(k);  // Init
+        vector<long long> dp(k);  
         for (int i = 0; i < n; i++) {
-            vector<long long> ndp(k);  // Current-layer state (rolling array).
+            vector<long long> ndp(k);  
 
             ndp[nums[i] % k]++;
 
@@ -13,9 +13,7 @@ public:
                 ndp[(long long)r * nums[i] % k] += dp[r];
             }
 
-            dp = move(ndp);  // Update the state.
-
-            // Accumulate the answer.
+            dp = move(ndp);  
             for (int r = 0; r < k; r++) {
                 result[r] += dp[r];
             }
