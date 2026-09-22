@@ -20,7 +20,7 @@ private:
         int mulR = right[k];
         result[k] = (mulL * mulR) % k;
 
-        // Case 1: Entirely within the left interval
+       
         for (int x = 0; x < k; x++) {
             result[x] = left[x];
         }
