@@ -9,7 +9,7 @@ private:
         tree[o].fill(0);
         int r = value % k;
         tree[o][r] = 1;
-        tree[o][k] = r;  // mul
+        tree[o][k] = r;  
     }
 
     void mergePre(const array<int, MAXK>& left, const array<int, MAXK>& right,
