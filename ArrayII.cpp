@@ -25,8 +25,7 @@ private:
             result[x] = left[x];
         }
 
-        // Case 2: Contains the entire left interval, followed by a prefix of
-        // the right interval
+     
         for (int x = 0; x < k; x++) {
             result[(mulL * x) % k] += right[x];
         }
