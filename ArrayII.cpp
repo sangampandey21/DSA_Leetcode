@@ -59,7 +59,7 @@ public:
         int m = (l + r) / 2;
         if (index <= m)
             update(o * 2, l, m, index, value);
-        else
+       else
             update(o * 2 + 1, m + 1, r, index, value);
         maintain(o);
     }
