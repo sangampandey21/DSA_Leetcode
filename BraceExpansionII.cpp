@@ -31,13 +31,13 @@ class Solution {
         return move(ret);
     }
 
-    // expr -> term | term, expr
+  
     set<string> expr() {
         set<string> ret;
         while (true) {
            
             ret.merge(term());
-            // Continue if a comma is matched; otherwise, stop matching
+         
             if (idx < expression.size() && expression[idx] == ',') {
                 idx++;
                 continue;
