@@ -1,8 +1,6 @@
 class Solution {
     string expression;
     int idx;
-
-    // item -> letter | { expr }
     set<string> item() {
         set<string> ret;
         if (expression[idx] == '{') {
