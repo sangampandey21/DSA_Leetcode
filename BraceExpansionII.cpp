@@ -16,8 +16,7 @@ class Solution {
     set<string> term() {
        
         set<string> ret = {""};
-        // An item starts with { or a lowercase letter; continue matching only
-        // when this condition is met
+       
         while (idx < expression.size() &&
                (expression[idx] == '{' || isalpha(expression[idx]))) {
             auto sub = item();
@@ -36,7 +35,7 @@ class Solution {
     set<string> expr() {
         set<string> ret;
         while (true) {
-            // Take the union with the result of term()
+           
             ret.merge(term());
             // Continue if a comma is matched; otherwise, stop matching
             if (idx < expression.size() && expression[idx] == ',') {
