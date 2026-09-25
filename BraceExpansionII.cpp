@@ -14,10 +14,8 @@ class Solution {
     }
 
     set<string> term() {
-       
         set<string> ret = {""};
-       
-        while (idx < expression.size() &&
+         while (idx < expression.size() &&
                (expression[idx] == '{' || isalpha(expression[idx]))) {
             auto sub = item();
             set<string> tmp;
@@ -30,13 +28,10 @@ class Solution {
         }
         return move(ret);
     }
-
-  
-    set<string> expr() {
+  set<string> expr() {
         set<string> ret;
         while (true) {
-           
-            ret.merge(term());
+         ret.merge(term());
          
             if (idx < expression.size() && expression[idx] == ',') {
                 idx++;
