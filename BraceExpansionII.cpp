@@ -13,7 +13,6 @@ class Solution {
         return move(ret);
     }
 
-    // term -> item | item term
     set<string> term() {
         // Initialize an empty set and take its Cartesian product with
         // subsequent results
