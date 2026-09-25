@@ -14,8 +14,7 @@ class Solution {
     }
 
     set<string> term() {
-        // Initialize an empty set and take its Cartesian product with
-        // subsequent results
+       
         set<string> ret = {""};
         // An item starts with { or a lowercase letter; continue matching only
         // when this condition is met
