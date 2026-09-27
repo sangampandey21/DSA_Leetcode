@@ -5,7 +5,7 @@ public:
         string result;
         for (char currentChar : s) {
             if (currentChar == '(') {
-                // Store th
+                
                 openParenthesesIndices.push(result.length());
             } else if (currentChar == ')') {
                 int start = openParenthesesIndices.top();
