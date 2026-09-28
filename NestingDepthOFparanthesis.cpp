@@ -10,8 +10,7 @@ public:
             } else if (c == ')') {
                 st.pop();
             }
-            
-            ans = max(ans, (int)st.size());
+    ans = max(ans, (int)st.size());
         }
         
         return ans;
