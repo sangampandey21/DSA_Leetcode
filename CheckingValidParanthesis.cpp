@@ -36,7 +36,6 @@ public:
                 }
             }
         }
-
-        return dp[n - 1][m - 1].test(0);
+ return dp[n - 1][m - 1].test(0);
     }
 };
