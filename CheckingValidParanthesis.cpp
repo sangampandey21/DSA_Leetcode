@@ -13,7 +13,7 @@ public:
         }
 
         vector<vector<bitset<201>>> dp(n, vector<bitset<201>>(m));
-     dp[0][0].set(1);
+        dp[0][0].set(1);
 
         for (int i = 0; i < n; ++i) {
             for (int j = 0; j < m; ++j) {
