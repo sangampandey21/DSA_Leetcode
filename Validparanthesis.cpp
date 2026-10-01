@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool isValid(string s) {
-        while (true) {
+     while (true) {
             size_t pos = string::npos;
             if ((pos = s.find("()")) != string::npos) {
                 s.erase(pos, 2);
