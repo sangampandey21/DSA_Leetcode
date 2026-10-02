@@ -10,7 +10,7 @@ public:
                 return;
             }
 
-            if (O > 0)
+        if (O > 0)
                 self(self, O - 1, C, s + "(");
 
             if (C >= O)
