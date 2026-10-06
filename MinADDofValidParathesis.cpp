@@ -8,8 +8,7 @@ public:
             if (c == '(') {
                 openBrackets++;
             } else {
-                // If open bracket exists, match it with the closing one
-                // If not, we need to add a open bracket.
+             
                 openBrackets > 0 ? openBrackets-- : minAddsRequired++;
             }
         }
