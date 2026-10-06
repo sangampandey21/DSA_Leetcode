@@ -14,8 +14,6 @@ public:
             }
         }
 
-        // Add the remaining open brackets as closing brackets would be
-        // required.
         return minAddsRequired + openBrackets;
     }
 };
