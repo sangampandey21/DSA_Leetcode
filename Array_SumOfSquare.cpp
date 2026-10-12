@@ -4,7 +4,7 @@ public:
         const int MOD = 1e9 + 7;
         vector<int> cnt(30, 0);
 
-        // Count the number of 1 bits at each position
+     
         for (int num : nums) {
             for (int i = 0; i < 30; i++) {
                 if (num & (1 << i)) {
