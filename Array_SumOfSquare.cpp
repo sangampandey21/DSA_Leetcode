@@ -16,7 +16,7 @@ public:
         long long res = 0;
         for (int i = 0; i < k; i++) {
             long long cur = 0;
-            // Construct the current number from the most significant bit to the
+       
         
             for (int j = 29; j >= 0; j--) {
                 if (cnt[j] > 0) {
