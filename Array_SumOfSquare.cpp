@@ -17,7 +17,7 @@ public:
         for (int i = 0; i < k; i++) {
             long long cur = 0;
             // Construct the current number from the most significant bit to the
-            // least significant bit
+        
             for (int j = 29; j >= 0; j--) {
                 if (cnt[j] > 0) {
                     cur |= (1LL << j);
