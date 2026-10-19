@@ -5,7 +5,7 @@ public:
         sort(nums.begin(), nums.end());
         vector<int> res;
         for (int i = 0; i < n; ++i) {
-            if (nums[i] == target) {
+        if (nums[i] == target) {
          res.push_back(i);
             }
         }
