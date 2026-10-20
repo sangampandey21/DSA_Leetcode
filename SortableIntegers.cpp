@@ -47,7 +47,7 @@ public:
         };
 
         auto check = [&](const vector<int>& nums1, const vector<int>& nums2) {
-            // Check whether cyclic rotations of nums1 can produce nums2
+            // Check whether cy
             vector<int> doubled = nums1;
             doubled.insert(doubled.end(), nums1.begin(), nums1.end());
             return kmp(doubled, nums2);
