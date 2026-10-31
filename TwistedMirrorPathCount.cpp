@@ -5,9 +5,6 @@ public:
 
         int m = grid.size();
         int n = grid[0].size();
-
-        // f[i][j][0]: enter (i, j) by moving down
-        // f[i][j][1]: enter (i, j) by moving right
         vector<vector<array<long long, 2>>> f(
             m, vector<array<long long, 2>>(n, {0, 0}));
 
