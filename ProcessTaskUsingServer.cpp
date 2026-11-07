@@ -8,7 +8,7 @@ public:
         int m = servers.size();
         int n = tasks.size();
 
-        // Busy servers, stored as pairs (t, idx)
+
         priority_queue<PLI, vector<PLI>, greater<PLI>> busy;
         // Idle servers, stored as pairs (w, idx)
         priority_queue<PII, vector<PII>, greater<PII>> idle;
