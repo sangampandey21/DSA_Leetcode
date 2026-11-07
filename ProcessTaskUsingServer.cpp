@@ -10,14 +10,14 @@ public:
 
 
         priority_queue<PLI, vector<PLI>, greater<PLI>> busy;
-        // Idle servers, stored as pairs (w, idx)
+  
         priority_queue<PII, vector<PII>, greater<PII>> idle;
         for (int i = 0; i < m; ++i) {
             idle.emplace(servers[i], i);
         }
 
         long long ts = 0;
-        // Move servers with t<=ts from priority queue busy to priority queue
+        
         
         auto release = [&]() {
             while (!busy.empty() && busy.top().first <= ts) {
