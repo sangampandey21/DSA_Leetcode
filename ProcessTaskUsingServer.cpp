@@ -18,7 +18,7 @@ public:
 
         long long ts = 0;
         // Move servers with t<=ts from priority queue busy to priority queue
-        // idle one by one
+        
         auto release = [&]() {
             while (!busy.empty() && busy.top().first <= ts) {
                 auto&& [_, idx] = busy.top();
