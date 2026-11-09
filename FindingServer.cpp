@@ -1,6 +1,6 @@
 class Solution {
     struct Job {
-        int at;  // the time its server frees up
+        int at; 
         int server;
         auto operator<=>(const Job&) const = default;
     };
