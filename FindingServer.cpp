@@ -10,7 +10,7 @@ public:
     vector<int> busiestServers(int k, vector<int>& arrival, vector<int>& load) {
         vector<int> turns(k);
         iota(turns.begin(), turns.end(), 0);  // at request 0, server x's next turn is x
-        MinHeap<int> free(greater<>{}, std::move(turns));  // each free server, keyed by its next turn
+        MinHeap<int> free(greater<>{}, std::move(turns));  
 
         MinHeap<Job> busy;
         vector<int> handled(k);
