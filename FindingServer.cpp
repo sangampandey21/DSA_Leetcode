@@ -18,7 +18,7 @@ public:
             while (!busy.empty() && busy.top().at <= arrival[i]) {  // done by the arrival
                 int x = busy.top().server;
                 busy.pop();
-                free.push(i + (x - i % k + k) % k);  // its first turn from i on
+                free.push(i + (x - i % k + k) % k); 
             }
             if (free.empty()) continue; 
             int x = free.top() % k;
