@@ -26,7 +26,6 @@ public:
             busy.push({arrival[i] + load[i], x});
             ++handled[x];
         }
-
         int most = ranges::max(handled);
         vector<int> ans;
         for (int x = 0; x < k; ++x)
