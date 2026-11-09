@@ -15,7 +15,7 @@ public:
         MinHeap<Job> busy;
         vector<int> handled(k);
         for (int i = 0; i < ssize(arrival); ++i) {
-            while (!busy.empty() && busy.top().at <= arrival[i]) {  // done by the arrival
+            while (!busy.empty() && busy.top().at <= arrival[i]) { 
                 int x = busy.top().server;
                 busy.pop();
                 free.push(i + (x - i % k + k) % k); 
