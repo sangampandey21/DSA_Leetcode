@@ -9,7 +9,7 @@ class Solution {
 public:
     vector<int> busiestServers(int k, vector<int>& arrival, vector<int>& load) {
         vector<int> turns(k);
-        iota(turns.begin(), turns.end(), 0);  // at request 0, server x's next turn is x
+        iota(turns.begin(), turns.end(), 0); 
         MinHeap<int> free(greater<>{}, std::move(turns));  
 
         MinHeap<Job> busy;
