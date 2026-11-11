@@ -7,7 +7,7 @@ public:
         if (cost1 + cost2 <= costBoth) {
             totalCost = 1LL * cost1 * need1 + 1LL * cost2 * need2;
         } else {
-            // Buy item 3 first until one requirement is fulfilled
+            
             int cnt_3 = min(need1, need2);
             totalCost = 1LL * cnt_3 * costBoth;
 
