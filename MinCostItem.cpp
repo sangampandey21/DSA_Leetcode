@@ -19,7 +19,7 @@ public:
                 totalCost += 1LL * need1 * min(cost1, costBoth);
             }
 
-            // Type 2 is still needed; choose the cheaper of items 2 and 3
+        
             else if (need2 > 0) {
                 totalCost += 1LL * need2 * min(cost2, costBoth);
             }
