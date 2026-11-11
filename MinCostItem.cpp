@@ -14,7 +14,7 @@ public:
             need1 -= cnt_3;
             need2 -= cnt_3;
 
-            // Type 1 is still needed; choose the cheaper of items 1 and 3
+        
             if (need1 > 0) {
                 totalCost += 1LL * need1 * min(cost1, costBoth);
             }
