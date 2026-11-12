@@ -2,8 +2,6 @@ class Solution {
 public:
     int longestMonotonicSubarray(vector<int>& nums) {
         int maxLength = 0;
-
-        // Find longest strictly increasing subarray
         for (int start = 0; start < nums.size(); start++) {
             int currLength = 1;
             for (int pos = start + 1; pos < nums.size(); pos++) {
