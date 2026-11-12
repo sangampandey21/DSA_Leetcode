@@ -30,7 +30,6 @@ public:
             maxLength = max(maxLength, currLength);
         }
 
-        return maxLength;  // Return the longer of increasing or decreasing
-                           // sequences
+        return maxLength;  
     }
 };
