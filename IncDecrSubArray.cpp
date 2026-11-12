@@ -9,7 +9,7 @@ public:
                 if (nums[pos] > nums[pos - 1]) {
                     currLength++;
                 } else {
-                    // Break if sequence is not increasing anymore
+                    
                     break;
                 }
             }
